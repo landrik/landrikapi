@@ -1,0 +1,49 @@
+{
+  "name": "landrik-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "nodemon --exec babel-node server.js",
+    "server": "nodemon --exec babel-node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landrik/mern-starter.git"
+  },
+  "author": "landrik",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "crypto": "^1.0.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.3",
+    "uuid": "^8.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.21.1",
+    "express-jwt": "^8.4.1",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.13",
+    "morgan": "^1.10.0",
+    "react-datetime": "^3.0.4"
+  }
+}
